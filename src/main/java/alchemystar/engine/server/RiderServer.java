@@ -16,6 +16,8 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
  * 无毁的湖光 启动器
+ *-Drider.home=D:\IdeaProjects\Rider -Drider.log.home=D:\IdeaProjects\Rider\assembly\logs -conf D:\IdeaProjects\Rider\assembly\conf
+ * -Drider.home=D://IdeaProjects//Rider -Drider.log.home=D://IdeaProjects//Rider//assembly//logs -Dconf=D://IdeaProjects//Rider//assembly//conf
  *
  * @Author lizhuyang
  */
@@ -27,9 +29,9 @@ public class RiderServer extends Thread {
         RiderServer server = new RiderServer();
         try {
             server.start();
-            while (true) {
-                Thread.sleep(1000 * 300);
-            }
+//            while (true) {
+//                Thread.sleep(1000 * 300);
+//            }
         } catch (Exception e) {
             e.printStackTrace();
         }

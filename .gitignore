@@ -3,3 +3,5 @@ target/
 .idea/
 *.iml
 *.class
+.DS_Store
+assembly/logs/

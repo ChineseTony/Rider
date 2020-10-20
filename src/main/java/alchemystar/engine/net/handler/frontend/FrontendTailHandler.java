@@ -1,5 +1,6 @@
 package alchemystar.engine.net.handler.frontend;
 
+import io.netty.channel.ChannelInboundHandlerAdapter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,7 +13,7 @@ import io.netty.channel.ChannelHandlerContext;
  *
  * @Author lizhuyang
  */
-public class FrontendTailHandler extends ChannelHandlerAdapter {
+public class FrontendTailHandler extends ChannelInboundHandlerAdapter {
 
     private static final Logger logger = LoggerFactory.getLogger(FrontendTailHandler.class);
 

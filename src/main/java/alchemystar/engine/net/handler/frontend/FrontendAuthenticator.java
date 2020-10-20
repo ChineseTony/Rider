@@ -3,6 +3,7 @@ package alchemystar.engine.net.handler.frontend;
 import java.net.InetSocketAddress;
 import java.security.NoSuchAlgorithmException;
 
+import io.netty.channel.ChannelInboundHandlerAdapter;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,7 +27,7 @@ import io.netty.channel.ChannelHandlerContext;
  *
  * @Author lizhuyang
  */
-public class FrontendAuthenticator extends ChannelHandlerAdapter {
+public class FrontendAuthenticator extends ChannelInboundHandlerAdapter {
 
     private static final Logger logger = LoggerFactory.getLogger(FrontendAuthenticator.class);
 
